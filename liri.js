@@ -5,16 +5,29 @@ var Twitter = require('twitter');
 var inquirer = require("inquirer");
 var fs = require("fs");
 
+// Grab the api keys from the .keys file
+var mediaKeys = require("./keys.js");
+
+// Store twitter api keys in variables
+var tweetConsumer = mediaKeys.twitterKeys.consumer_key;
+var tweetConsumer_secret = mediaKeys.twitterKeys.consumer_secret;
+var tweetAccess_token_key = mediaKeys.twitterKeys.access_token_key;
+var tweetAccess_token_secret = mediaKeys.twitterKeys.access_token_secret;
+
+// Store spotify api keys in variables
+var spotifyId = mediaKeys.spotifyKeys.client_id;
+var spotifySecret = mediaKeys.spotifyKeys.client_secret;
+
 var client = new Twitter({
-    consumer_key: '5rQYexogqXqv1ve8hYR6SO2Mr',
-    consumer_secret: 'hAom1cekGlvaXgD1DmXXhGzOaDyWAdUM74nXHCbeNJl5MFcNrp',
-    access_token_key: '899018269633331200-AzsGioEoIsNTmpFvc9xYaB7Dtzqt5JV',
-    access_token_secret: 'D1sURvd3Yqvh2pTOORHTErKu6aYl6shPpVOa175P2MkhF'
+    consumer_key: tweetConsumer,
+    consumer_secret: tweetConsumer_secret,
+    access_token_key: tweetAccess_token_key,
+    access_token_secret: tweetAccess_token_secret
 });
 
 var spotify = new Spotify({
-    id:'5fcada95ee784c2f996ad60d23127970',
-    secret:'8e1ec6918e454b06928a52a48282cb08'
+    id: spotifyId,
+    secret: spotifySecret
   });
 
 // Declare variables for user input from the command line
@@ -25,7 +38,7 @@ switch(commands)
 {
     default:
         console.log("You've entered an incorrect command" +
-        "Please enter 'my-tweets', 'spotify-this-song + track name(capitalize first letters)', 'movie-this', or 'do-what-it-says.'");
+        "Please enter'my-tweets', 'spotify-this-song + track name(capitalize first letters)', 'movie-this', or 'do-what-it-says.'");
         break;
     case "my-tweets":
         client.get('statuses/home_timeline', 
@@ -51,6 +64,7 @@ switch(commands)
             }
         });
         break;
+        
     case "spotify-this-song":
         spotify.search({ type: 'track', query: userInput }, function(err, data) 
         {
@@ -89,7 +103,7 @@ switch(commands)
 
         request(queryUrl, function(error, response, body) 
         {
-            if (!error && response.statusCode === 200) 
+            if (!error) 
             {
                 console.log('\n');
                 console.log("Title: " + JSON.parse(body).Title);
