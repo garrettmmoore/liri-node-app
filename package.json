@@ -2,7 +2,7 @@
   "name": "liri-node-app",
   "version": "1.0.0",
   "description": "liri is helpful",
-  "main": "index.js",
+  "main": "liri.js",
   "scripts": {
     "test": "liri is working"
   },
@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/garrettmmoore/liri-node-app/issues"
   },
-  "homepage": "https://github.com/garrettmmoore/liri-node-app#readme"
+  "homepage": "https://github.com/garrettmmoore/liri-node-app#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^3.2.2",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.81.0",
+    "twitter": "^1.7.1"
+  }
 }
