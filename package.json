@@ -1,0 +1,25 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "liri is helpful",
+  "main": "index.js",
+  "scripts": {
+    "test": "liri is working"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garrettmmoore/liri-node-app.git"
+  },
+  "keywords": [
+    "liri",
+    "spotify",
+    "twitter",
+    "request"
+  ],
+  "author": "Garrett Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garrettmmoore/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/garrettmmoore/liri-node-app#readme"
+}
