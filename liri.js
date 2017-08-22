@@ -5,14 +5,6 @@ var Twitter = require('twitter');
 var inquirer = require("inquirer");
 var fs = require("fs");
 
-// Grab the api keys from the .keys file
-// var mediaKeys = require("./keys.js");
-
-// Store api keys in variables
-// var client = mediaKeys.twitterKeys;
-// console.log(userTwitter);
-
-
 var client = new Twitter({
     consumer_key: '5rQYexogqXqv1ve8hYR6SO2Mr',
     consumer_secret: 'hAom1cekGlvaXgD1DmXXhGzOaDyWAdUM74nXHCbeNJl5MFcNrp',
@@ -25,10 +17,7 @@ var spotify = new Spotify({
     secret:'8e1ec6918e454b06928a52a48282cb08'
   });
 
-
-// var userSpotify = mediaKeys.spotifyKeys;
-// console.log(userSpotify);
-
+// Declare variables for user input from the command line
 var commands = process.argv[2];
 var userInput = process.argv[3];
 
@@ -36,7 +25,7 @@ switch(commands)
 {
     default:
         console.log("You've entered an incorrect command" +
-        "Please enter 'my-tweets', 'spotify-this-song', 'movie-this', or 'do-what-it-says.'");
+        "Please enter 'my-tweets', 'spotify-this-song + track name(capitalize first letters)', 'movie-this', or 'do-what-it-says.'");
         break;
     case "my-tweets":
         client.get('statuses/home_timeline', 
