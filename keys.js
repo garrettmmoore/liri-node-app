@@ -6,6 +6,6 @@ exports.twitterKeys = {
 };
 
 exports.spotifyKeys = {
-    client_id:'5fcada95ee784c2f996ad60d23127970',
-    client_secret:'8e1ec6918e454b06928a52a48282cb08'
+  client_id: '5fcada95ee784c2f996ad60d23127970',
+  client_secret: '8e1ec6918e454b06928a52a48282cb08'
 };
