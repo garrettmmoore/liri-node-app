@@ -8,20 +8,23 @@ Node Packages Used: Twitter, Spotify, Request.
 
 ## Installation
 1. Download the appropriate npm packages by running npm install.
-2. Make sure you copy and paste your Twitter keys in the keys.js file. You will need the following:
+2. Get your API keys here:
+    1. Twitter: https://apps.twitter.com/app/new
+    2. Spotify: https://developer.spotify.com/my-applications/#!/
+3. Make sure you copy and paste your Twitter keys in the keys.js file. You will need the following:
     1. consumer_key
     2. consumer_secret
     3. access_token_key
     4. access_token_secret
-3. Make sure you copy and paste your Spotify keys in the keys.js file. You will need the following:
+4. Make sure you copy and paste your Spotify keys in the keys.js file. You will need the following:
     1. client_id
     2. client_secret
-4. After you've added your keys, you can now run a command. LIRI knows 4 commands.
+5. After you've added your keys, you can now run a command. LIRI knows 4 commands.
     1. my-tweets
     2. spotify-this-song 'song name here'
     3. movie-this 'movie name here'
     4. do-what-it-says
-5. To use LIRI, open up your terminal and type 'node liri.js "whatever command you choose" in the command line.
+6. To use LIRI, open up your terminal and type 'node liri.js "whatever command you choose" in the command line.
 
 ## Commmand 1 - my-tweets
 1. Running this command in your terminal/bash window will display your most recent tweets and when they were created.
