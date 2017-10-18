@@ -51,7 +51,7 @@ Node Packages Used: Twitter, Spotify, Request.
 
 2. Note: OMDB API requires an API key. The API Key is provided for you.
 
-## Command 4 - "do-what-it-says"
+## Command 4 - do-what-it-says
 1. Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
 ![do-what-it-says](/images/do-what-it-says.png)
