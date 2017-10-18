@@ -23,20 +23,20 @@ Node Packages Used: Twitter, Spotify, Request.
     4. do-what-it-says
 5. To use LIRI, open up your terminal and type 'node liri.js "whatever command you choose" in the command line.
 
-## Commmand 1 - "my-tweets"
+## Commmand 1 - my-tweets
 1. Running this command in your terminal/bash window will display your most recent tweets and when they were created.
 
 ![my-tweets](/images/my-tweets.png)
 
-## Command 2 - "spotify-this-song 'song name here'"
-1. This will show the following information about the song in your terminal/bash window
+## Command 2 - spotify-this-song 'song name here'
+1. Running this command will display the following information about the song in your terminal/bash window:
     1. The song's title.
     2. The album that the song is from.
     3. Artist(s).
 
 ![spotify-this-song](/images/spotify-this-song.png)
 
-## Command 3 - "movie-this 'movie name here'"
+## Command 3 - movie-this 'movie name here'
 1. Running this command will output the following information to your terminal/bash window:
     1. Title of the movie.
     2. Year the movie came out.
