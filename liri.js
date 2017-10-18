@@ -101,7 +101,7 @@ switch (commands) {
                 console.log("Title: " + JSON.parse(body).Title);
                 console.log("Year: " + JSON.parse(body).Year);
                 console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
-                console.log("Rotten Tomatoes Rating: " + JSON.parse(body).Metascore);
+                console.log("Metascore Rating: " + JSON.parse(body).Metascore);
                 console.log("Country Produced: " + JSON.parse(body).Country);
                 console.log("Language: " + JSON.parse(body).Language);
                 console.log('\n');
