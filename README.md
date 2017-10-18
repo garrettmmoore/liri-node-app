@@ -18,8 +18,8 @@ Node Packages Used: Twitter, Spotify, Request.
     2. client_secret
 4. After you've added your keys, you can now run a command. LIRI knows 4 commands.
     1. my-tweets
-    2. spotify-this-song '<song name here>'
-    3. movie-this '<movie name here>'
+    2. spotify-this-song 'song name here'
+    3. movie-this 'movie name here'
     4. do-what-it-says
 5. To use LIRI, open up your terminal and type 'node liri.js "whatever command you choose" in the command line.
 
@@ -28,7 +28,7 @@ Node Packages Used: Twitter, Spotify, Request.
 
 ![my-tweets](/images/my-tweets.png)
 
-## Command 2 - "spotify-this-song '<song name here>'"
+## Command 2 - "spotify-this-song 'song name here'"
 1. This will show the following information about the song in your terminal/bash window
     1. The song's title.
     2. The album that the song is from.
@@ -36,7 +36,7 @@ Node Packages Used: Twitter, Spotify, Request.
 
 ![spotify-this-song](/images/spotify-this-song.png)
 
-## Command 3 - "movie-this '<movie name here>'"
+## Command 3 - "movie-this 'movie name here'"
 1. Running this command will output the following information to your terminal/bash window:
     1. Title of the movie.
     2. Year the movie came out.
