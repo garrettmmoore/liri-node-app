@@ -2,7 +2,6 @@
 var request = require("request");
 var Spotify = require('node-spotify-api');
 var Twitter = require('twitter');
-var inquirer = require("inquirer");
 var fs = require("fs");
 
 // Grab the api keys from the .keys file
@@ -78,8 +77,8 @@ switch (commands) {
 
     // Get OMDB Movie Search
     case "movie-this":
-            // Store all of the arguments in an array
-            var nodeArgs = process.argv;
+        // Store all of the arguments in an array
+        var nodeArgs = process.argv;
 
         // Create an empty variable for holding the movie name
         var movieName = "";
